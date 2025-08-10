@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="{% static 'menu.css' %}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Petuk Bari</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'service' %}">Services</a></li>
+            <li><a href="{% url 'menu' %}" class="active">Menu</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Menu</h1>
+            <p>Good Food, Great Food</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Starters</h2>
+        <div class="menu-grid">
+            <div>Fish Fry (Kolkata Vetki) - ₹250</div>
+            <div>Fish Kabiraji - ₹250</div>
+            <div>Paneer Pakora (6 pcs) - ₹200</div>
+            <div>Chicken Ala kiev - ₹230</div>
+            <div>Chicken Pakora (6 pcs) - ₹200</div>
+            <div>Chicken Lolipop (4 pcs) - ₹200</div>
+            <div>Chicken Reshmi Tikka (6 pcs) - ₹250</div>
+            <div>Paneer Tandoor (6 pcs) - ₹200</div>
+            <div>Chicken Tndoor (6 pcs) - ₹230</div>
+            <div>Fish Ball (4 pcs) - ₹250</div>
+            <div>Bengali Aloo Bhaja - ₹90</div>
+            <div>Beguni (2 pcs) - ₹90</div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Special Rice</h2>
+        <div class="menu-grid">
+            <div>Plain Rice - ₹90</div>
+            <div>Basanti Pulao - ₹130</div>
+            <div>Fried Rice - ₹130</div>
+            <div>Mixed Fried Rice - ₹180</div>
+            <div>Misti Pulao - ₹140</div>
+            <div>Special Chicken Biriyani - ₹250</div>
+            <div>Special Mutton Biriyani - ₹350</div>
+        </div>
+    </section>
+
+    <section class="menu-section two-column">
+        <div>
+            <h2>Veg Dishes</h2>
+            <ul>
+                <li>Posto (Aloo) - ₹250</li>
+                <li>Aloor Dom - ₹100</li>
+                <li>Kadhai Paneer - ₹150</li>
+                <li>Sukto - ₹120</li>
+                <li>Dal - ₹110</li>
+                <li>Chanar Dalna - ₹110</li>
+                <div>Paneer Bhapa(2 pcs Large Slice) - ₹200</div>
+                <div>Matar Paneer - ₹200</div>
+            </ul>
+        </div>
+        <div>
+            <h2>Non-Veg Dishes</h2>
+            <ul>
+                <li>Hilsa Bhapa - ₹350</li>
+                <li>Rohu Fish Kalia - ₹180</li>
+                <li>Chicken Duckbanglow - ₹250</li>
+                <li>Dab Chingri - ₹250</li>
+                <li>Bhetki Bhapa - ₹350</li>
+                <li>Butter Chicken - ₹200</li>
+            </ul>
+        </div>
+    </section>
+    <section class="menu-section">
+        <h2>Breads</h2>
+        <div class="menu-grid">
+            <div>Roti - ₹20</div>
+            <div>Tandoori Roti - ₹30</div>
+            <div>Puri - ₹40</div>
+            <div>Kulcha - ₹50</div>
+            <div>Masala Kulcha - ₹60</div>
+            <div>Baby Naan - ₹40</div>
+        </div>
+    </section>
+    
+
+    <section class="menu-section">
+        <h2>Chinese</h2>
+        <div class="menu-grid">
+            <div>Chow & Fried Rice - ₹200</div>
+            <div>Hakka Noodles - ₹150</div>
+            <div>Chilly Garlic Noodles - ₹160</div>
+            <div>Chilli Chicken - ₹200</div>
+            <div>Chilli Paneer - ₹180</div>
+            <div>Chicken Schezwan - ₹200</div>
+            <div>Chicken Soup - ₹100</div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Sweet Dishes</h2>
+        <div class="menu-grid">
+            <div>Misti Doi - ₹100</div>
+            <div>Payesh - ₹70</div>
+            <div>Chatni - ₹60</div>
+            <div>Rasmalai - ₹50</div>
+            <div>Bhapa Sandesh - ₹20</div>
+            <div>Seasonal Special Sweets</div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Juice & Shakes</h2>
+        <div class="menu-grid">
+            <div>Oreo Shake - ₹70</div>
+            <div>Dark Chocolate - ₹85</div>
+            <div>Brownie Shake - ₹100</div>
+        </div>
+        <h3>Mojito</h3>
+        <ul class="mojito-list">
+            <li>Virgin Mojito - ₹80</li>
+            <li>Classic Mint Mojito - ₹90</li>
+            <li>Blue Lagoon - ₹95</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Petuk Bari. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

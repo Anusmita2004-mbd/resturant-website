@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Book a Table | Petuk Bari</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #fff6e5;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #d35400;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background-color: orange;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Book a Table at Petuk Bari</h2>
+
+    <form method="POST" action="{% url 'book' %}">
+        {% csrf_token %}
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="persons">No. of People:</label>
+        <input type="number" id="persons" name="persons" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="{% url 'contact' %}" style="padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">⬅ Back to Contact</a>
+    </div>
+
+</body>
+</html>

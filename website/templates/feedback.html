@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Feedback | Petuk Bari</title>
+    <link rel="stylesheet" href="{% static 'feedback.css' %}">
+</head>
+
+<body>
+
+    <div class="feedback-container">
+        <h1>🗣️ Spill the Beans! 🍛</h1>
+
+        <div class="food-gallery">
+            <img src="{% static 'hakka.jpg' %}" alt="Hakka Noodles">
+            <img src="{% static 'tikka.jpg' %}" alt="Paneer Tikka">
+            <img src="{% static 'ice.jpg' %}" alt="Ice Cream">
+        </div>
+
+        <div class="previous-feedbacks">
+            <h3>What others are saying:</h3>
+            <ul>
+                <li>
+                    <p><strong>Nicol Ross:</strong> I tried Aloo Posto for the first time here, and I must say... simply unforgettable! Such a unique flavour! ⭐⭐⭐⭐⭐</p>
+                    <p class="reply">🟠 Petuk Bari: Glad to know! Thanks for trying us out 💖</p>
+                </li>
+                <li>
+                    <p><strong>Rounak Mukherjee:</strong> The rice could have been cooked better. ⭐⭐⭐</p>
+                    <p class="reply">🟠 Petuk Bari: We'll try to improve next time. Glad for your advice!</p>
+                </li>
+                <li>
+                    <p><strong>Anu Misra:</strong> Loved the lighting and the decor. Felt cozy! ⭐⭐⭐⭐</p>
+                    <p class="reply">🟠 Petuk Bari: Thank you, Anu! We work hard on ambience too 😊</p>
+                </li>
+                <li>
+                    <p><strong>Asmita Mukherjee :</strong> Best Oreo Shake I’ve had in a while! So creamy! ⭐⭐⭐⭐⭐</p>
+                    <p class="reply">🟠 Petuk Bari: That's so sweet of you! Come back for more 😄</p>
+                </li>
+                <li>
+                    <p><strong>Subha Banerjee:</strong> Service was good, though I had to wait a little. ⭐⭐⭐</p>
+                    <p class="reply">🟠 Petuk Bari: Thanks for your patience, Subha! We’ll be quicker next time.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="feedback-form">
+            <h3>Leave your feedback below:</h3>
+
+            <form action="{% url 'feedback' %}" method="POST">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Your name" required><br>
+                <input type="email" name="email" placeholder="Your email" required><br>
+                <textarea name="message" placeholder="Write your thoughts here..." rows="5" required></textarea><br>
+
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 stars">&#9733;</label>
+                
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">&#9733;</label>
+                
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">&#9733;</label>
+                
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">&#9733;</label>
+                
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">&#9733;</label>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="{% url 'contact' %}" style="padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">← Back to Contact</a>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.feedback-form .star-rating input').forEach((radio) => {
+            radio.addEventListener('change', () => {
+                const allStars = document.querySelectorAll('.feedback-form .star-rating label');
+                allStars.forEach(label => label.style.color = '#ccc'); // reset
+                let val = radio.value;
+                document.querySelectorAll(`.feedback-form .star-rating input`).forEach(star => {
+                    if (star.value <= val) {
+                        star.nextElementSibling.style.color = 'gold';
+                    }
+                });
+            });
+        });
+        </script>
+        
+    
+</body>
+
+</html>

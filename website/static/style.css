@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+.logo {
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+nav a.active {
+    border-bottom: 2px solid yellow;
+    /* Active underline */
+}
+
+
+/* Hero Section with Background Slider */
+
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url('food1.jpg');
+    }
+    33% {
+        background-image: url('food2.jpg');
+    }
+    66% {
+        background-image: url('food3.jpg');
+    }
+    100% {
+        background-image: url('food1.jpg');
+    }
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #222;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+
+/* Whole Page Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+/* Two Sections Side by Side */
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Left Side: Image Overlap + Background */
+
+.image-section {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(135deg, #ffcc00, #ff6699, #66ccff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-background {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: white;
+    border-radius: 20px;
+    transform: rotate(-5deg);
+    z-index: 0;
+}
+
+.main-image {
+    position: relative;
+    width: 320px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: 1;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Right Side: Form */
+
+.form-section {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-section h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e60000;
+}

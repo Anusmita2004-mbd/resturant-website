@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Petuk Bari</title>
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Petuk Bari</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}" class="active">About Us</a></li>
+            <li><a href="{% url 'service' %}">Service</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Interior Image -->
+    <header>
+        <img src="{% static 'food5.jpg' %}" alt="Restaurant Interior" class="header-img">
+        <h1>Welcome to Our Restaurant</h1>
+        <p class="tagline">Delicious food made with love ❤️</p>
+    </header>
+
+    <!-- Short Intro -->
+    <section class="content-box">
+        <h2>Short Intro</h2>
+        <p>Our restaurant is located in the heart of the city, serving every dish with love and care. A modern ambiance, traditional taste, and warm hospitality are our signature features.</p>
+    </section>
+
+    <!-- Our Story -->
+    <section class="content-box">
+        <h2>Our Story</h2>
+        <p>We started our journey from a small kitchen with a dream to bring authentic flavors to everyone. Over the years, we have grown, but our taste and sincerity remain the same.</p>
+    </section>
+
+    <!-- Mission & Vision in Same Row -->
+    <div class="mission-vision">
+        <div class="content-box">
+            <h2>Mission</h2>
+            <p>Our mission is to serve the best quality food, combining authentic taste with healthy ingredients. We aim to create a delightful dining experience for every customer.</p>
+        </div>
+        <div class="content-box">
+            <h2>Vision</h2>
+            <p>Our vision is to become the most loved restaurant in the city by offering a unique blend of tradition and innovation, while keeping customer satisfaction at the heart of everything we do.</p>
+        </div>
+    </div>
+
+    <!-- Sweet Dishes Section -->
+    <div class="sweets-section">
+
+        <!-- Special Dishes with Image in Same Row -->
+        <div class="sweet-box seasonal-row">
+            <div class="seasonal-text">
+                <h2>🍲 Special Dishes 🍲</h2>
+                <ul>
+                    <li>Authentic Mutton Biryani</li>
+                    <li>Kolkata Style Biryani</li>
+                    <li>Sorshe Ilish</li>
+                    <li>Handi Mutton</li>
+                </ul>
+            </div>
+            <div class="seasonal-image">
+                <img src="{% static 'food8.jpg' %}" alt="Handi Mutton" class="sweet-img">
+            </div>
+        </div>
+
+        <!-- Seasonal Sweet Dishes with Image in Same Row -->
+        <div class="sweet-box seasonal-row">
+            <div class="seasonal-text">
+                <h2>🍨 Seasonal Sweet Dishes 🍨</h2>
+                <ul>
+                    <li>Patisapta (Winter)</li>
+                    <li>Gokul Pitha (Winter)</li>
+                    <li>Mango Sandesh (Summer)</li>
+                    <li>Tal Pitha (Monsoon)</li>
+                </ul>
+            </div>
+            <div class="seasonal-image">
+                <img src="{% static 'food6.jpg' %}" alt="Seasonal Sweet Dish" class="sweet-img">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Petuk Bari | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

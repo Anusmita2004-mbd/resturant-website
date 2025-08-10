@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Service SOPs</title>
+    <link rel="stylesheet" href="{% static 'service.css' %}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Petuk Bari</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'service' %}" class="active">Services</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Restaurant Services</h1>
+        <p class="subheading">Master every step of excellent restaurant service</p>
+    </header>
+
+    <section class="services-container">
+
+        <!-- 1. Guest Reception -->
+        <div class="service-box">
+            <img src="{% static 'image/guest_reception.jpg' %}" alt="Guest Reception" class="service-img" />
+            <h2>1. Guest Reception</h2>
+            <ul>
+                <li>Welcome within 30 seconds</li>
+                <li>Smile & friendly tone</li>
+                <li>Escort to the table</li>
+                <li>Assist elderly, families, etc.</li>
+                <li>Prompt menu delivery</li>
+                <li>Highlight specials or chef's picks</li>
+            </ul>
+        </div>
+
+        <!-- 2. Order Taking -->
+        <div class="service-box">
+            <img src="{% static 'image/order_taking.jpg' %}" alt="Order Taking" class="service-img" />
+            <h2>2. Order Taking</h2>
+            <ul>
+                <li>Ready notepad and pen</li>
+                <li>Accurate repeat order</li>
+                <li>Respect order decision</li>
+                <li>Allergy check</li>
+            </ul>
+        </div>
+
+        <!-- 3. Service Delivery -->
+        <div class="service-box">
+            <img src="{% static 'image/service_delivery.jpg' %}" alt="Service Delivery" class="service-img" />
+            <h2>3. Service Delivery</h2>
+            <ul>
+                <li>Appetizers in 10 mins</li>
+                <li>Main course in 20 mins</li>
+                <li>Neat, appealing plating</li>
+                <li>Check back within 5 minutes</li>
+            </ul>
+        </div>
+
+        <!-- 4. Beverage Service -->
+        <div class="service-box">
+            <img src="{% static 'image/beverage_service.jpg' %}" alt="Beverage Service" class="service-img" />
+            <h2>4. Beverage Service</h2>
+            <ul>
+                <li>Use correct type for each drink</li>
+                <li>Pour at table when possible</li>
+                <li>Act proactively before glass is empty</li>
+            </ul>
+        </div>
+
+        <!-- 5. Table Maintenance -->
+        <div class="service-box">
+            <img src="{% static 'image/table_maintenance.jpg' %}" alt="Table Maintenance" class="service-img" />
+            <h2>5. Table Maintenance</h2>
+            <ul>
+                <li>Prompt & discreet clearing</li>
+                <li>Crumbing between courses</li>
+                <li>Prepare for next course efficiently</li>
+            </ul>
+        </div>
+
+        <!-- 6. Handling Complaints -->
+        <div class="service-box">
+            <img src="{% static 'image/complain.jpg' %}" alt="Handling Complaints" class="service-img" />
+            <h2>6. Handling Complaints</h2>
+            <ul>
+                <li>Listen: Let guest speak fully</li>
+                <li>Apologize: Sincere and respectful</li>
+                <li>Resolve: Act quickly and efficiently</li>
+            </ul>
+        </div>
+
+        <!-- 7. Event Catering & Special Arrangements -->
+        <div class="service-box">
+            <h2>7. Event Catering & Special Arrangements</h2>
+            <ul>
+                <li>Customized menu planning</li>
+                <li>Efficient coordination</li>
+                <li>Timely setup and delivery</li>
+                <li>Accept and deliver large meal orders for birthday, office events</li>
+            </ul>
+        </div>
+
+        <!-- 8. Closing Procedures -->
+        <div class="service-box">
+            <h2>8. Closing Procedures</h2>
+            <ul>
+                <li>Final Check – Tables cleared/reset</li>
+                <li>Billing – Prompt, professional</li>
+                <li>Farewell – Thank & invite back</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Petuk Bari | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

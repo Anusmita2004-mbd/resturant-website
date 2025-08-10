@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petuk Bari Restaurant</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Petuk Bari</div>
+        <nav>
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'about' %}">About Us</a>
+            <a href="{% url 'service' %}">Services</a>
+            <a href="{% url 'menu' %}">Menu</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'login' %}">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Petuk Bari</h1>
+            <p>Love & Smiles in Every Bite</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>Address</h3>
+            <p>Asansol, West Bengal, India</p>
+        </div>
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 10am - 10pm<br>Sat - Sun: 11am - 11pm</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Contact Us | Petuk Bari</title>
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Petuk Bari</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'service' %}">Service</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'contact' %}" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-main">
+        <div class="contact-left">
+            <h1>Need Help from Petuk Bari?</h1>
+            <p>We’re here to assist you with your food journey. Whether it’s a celebration or a cozy dinner, we’re always ready to make it special.</p>
+            <a href="{% url 'book' %}" class="btn">Book a Table Now</a>
+        </div>
+        <div class="contact-right">
+            <img src="{% static 'contact.jpg' %}" alt="Petuk Bari Kitchen">
+        </div>
+    </section>
+
+    <!-- 🔻 Contact Info Section -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> Asansol-1, West Bengal, India</p>
+        <p><strong>Office Hours:</strong> 9:00 AM - 11:00 PM (Everyday)</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> support@petukbari.com</p>
+    </section>
+
+    <!-- 🔻 Feedback Section Start -->
+    <section class="feedback-prompt">
+        <h2>We’d love to hear from you! 💬</h2>
+        <p>Your feedback helps us serve you better. Click below to share your thoughts!</p>
+        <a href="{% url 'feedback' %}" class="feedback-btn">Give Feedback</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Petuk Bari. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
