@@ -1,0 +1,201 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("food7.0e13a2dcdf74.jpg") repeat;
+    background-size: cover;
+    color: #5a3e00;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background: yellow;
+    color: black;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.2rem;
+}
+
+
+/* Content Boxes */
+
+.content-box {
+    background: rgba(255, 223, 100, 0.85);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* Mission & Vision Row */
+
+.mission-vision {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mission-vision .content-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+/* Sweet Dishes Section */
+
+.sweets-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+/* Sweet Box */
+
+.sweet-box {
+    background: rgba(255, 223, 100, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+}
+
+
+/* Sweet Image */
+
+.sweet-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* Handi Mutton Image — same style as sweet dishes */
+
+.special-dish-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* Seasonal Sweet Row */
+
+.seasonal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seasonal-text {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.seasonal-image {
+    flex-shrink: 0;
+}
+
+
+/* List Style */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 223, 100, 0.85);
+    font-weight: bold;
+    margin-top: 20px;
+}
