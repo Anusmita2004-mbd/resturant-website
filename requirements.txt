@@ -1,5 +1,5 @@
-asgrief==3.8.1 
+asgiref==3.8.1 
 django==4.2.23 
 sqlparse==0.5.3 
 tzdata==2025.2 
-gunicorn==21.2,0 
+gunicorn==21.2.0 
