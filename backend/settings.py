@@ -22,7 +22,7 @@ SECRET_KEY = 'django-insecure-18=^-@v4lzfj7)y68a(mhx%@4cr*#dd&60_k&7pfxei++8atk3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['restrurant-website-fiqz.onrender.com']
+ALLOWED_HOSTS = ['resturant-website-fiqz.onrender.com']
 
 
 # Application definition
