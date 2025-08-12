@@ -5,9 +5,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-18=^-@v4lzfj7)y68a(mhx%@4cr*#dd&60_k&7pfxei++8atk3'
 
-DEBUG = False  # ✅ Production এ False
+DEBUG = True  # লোকালে সবসময় True রাখো
 
-ALLOWED_HOSTS = ['resturant-website-fiqz.onrender.com']
+ALLOWED_HOSTS = []  # লোকালে ফাঁকা রাখো
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -21,7 +21,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # ✅ Whitenoise যোগ করলাম
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -70,13 +69,9 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     BASE_DIR / "website" / "static",
 ]
-
-# ✅ Whitenoise storage
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
