@@ -1,196 +1,186 @@
-/* Reset and Base */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/kitchen.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
-
-
-/* Navbar */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.85);
-}
-
-.logo {
-    font-size: 26px;
-    color: orange;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.nav-links li a:hover,
-.book-btn:hover {
-    background-color: darkorange;
-}
-
-.book-btn {
-    background-color: orange;
-}
-
-
-/* Contact Section */
-
-.contact-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 50px;
-    border-radius: 10px;
-}
-
-.contact-left {
-    flex: 1;
-    padding-right: 40px;
-}
-
-.contact-left h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-.contact-left p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-
-.btn {
-    text-decoration: none;
-    background-color: orange;
-    padding: 12px 24px;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: darkorange;
-}
-
-.contact-right {
-    flex: 1;
-}
-
-.contact-right img {
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-}
-
-
-/* 🔥 Contact Info Section (Updated Style) */
-
-.contact-info {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(4px);
-}
-
-.contact-info h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #ffcc80;
-    border-bottom: 2px solid orange;
-    display: inline-block;
-    padding-bottom: 8px;
-}
-
-.contact-info p {
-    font-size: 17px;
-    line-height: 1.6;
-    margin: 10px 0;
-    color: #fff9f0;
-}
-
-
-/* Feedback Section */
-
-.feedback-prompt {
-    text-align: center;
-    margin: 50px auto;
-    padding: 30px 20px;
-    background-color: #fff3e6;
-    border-radius: 12px;
-    max-width: 700px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-}
-
-.feedback-prompt h2 {
-    font-size: 26px;
-    color: #ff6600;
-    margin-bottom: 10px;
-}
-
-.feedback-prompt p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-.feedback-btn {
-    font-size: 18px;
-    background-color: #ff6600;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.feedback-btn:hover {
-    background-color: #e65c00;
-}
-
-
-/* Footer */
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-footer:hover {
-    background-color: #e65c00;
-}
+        /* Reset and Base */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/kitchen.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        /* Navbar */
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+        
+        .logo {
+            font-size: 26px;
+            color: orange;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        
+        .nav-links li a:hover,
+        .book-btn:hover {
+            background-color: darkorange;
+        }
+        
+        .book-btn {
+            background-color: orange;
+        }
+        /* Contact Section */
+        
+        .contact-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 50px;
+            border-radius: 10px;
+        }
+        
+        .contact-left {
+            flex: 1;
+            padding-right: 40px;
+        }
+        
+        .contact-left h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-left p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .btn {
+            text-decoration: none;
+            background-color: orange;
+            padding: 12px 24px;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: darkorange;
+        }
+        
+        .contact-right {
+            flex: 1;
+        }
+        
+        .contact-right img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        /* 🔥 Contact Info Section (Updated Style) */
+        
+        .contact-info {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(4px);
+        }
+        
+        .contact-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffcc80;
+            border-bottom: 2px solid orange;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        
+        .contact-info p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #fff9f0;
+        }
+        /* Feedback Section */
+        
+        .feedback-prompt {
+            text-align: center;
+            margin: 50px auto;
+            padding: 30px 20px;
+            background-color: #fff3e6;
+            border-radius: 12px;
+            max-width: 700px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feedback-prompt h2 {
+            font-size: 26px;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        
+        .feedback-prompt p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        
+        .feedback-btn {
+            font-size: 18px;
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .feedback-btn:hover {
+            background-color: #e65c00;
+        }
+        /* Footer */
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        footer:hover {
+            background-color: #e65c00;
+        }
